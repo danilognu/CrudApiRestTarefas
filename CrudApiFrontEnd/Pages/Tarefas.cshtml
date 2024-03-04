@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h1 class="display-4">Cadastro da Tarefa</h1>
+    <form>
+        <div class="form-group">
+            <label for="Titulo">Titulo</label>
+            <input type="email" class="form-control" id="titulo">
+        </div>
+        <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" class="form-control" id="dataTarefa" name="dataTarefa" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="data">Descrição</label>
+            <input type="text" class="form-control" id="descricao" placeholder="">
+        </div>
+        <button type="button" class="btn btn-primary" onClick="enviarDados()">Salvar Tarefa</button>
+    </form>
+</div>
+
+
+ <script src="~/js/jquery-ui.js" asp-append-version="true"></script>
